@@ -5,4 +5,6 @@ script:
   - bundle exec rspec spec/
 addons:
   postgresql: "9.4"
+before_script:
+  - cp test/dummy/config/database.travis.yml test/dummy/config/database.yml
 
