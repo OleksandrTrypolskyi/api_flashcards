@@ -4,6 +4,10 @@ module ApiFlashcards
   class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
 
+    def json_response(object, status = :ok)
+      render json: object, status: status
+    end
+
     private
 
     def authenticate

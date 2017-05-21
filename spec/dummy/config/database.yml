@@ -3,20 +3,20 @@ default: &default
   encoding: unicode
   pool: 5
   host: localhost
-  username: user1
-  password: password1
+  username: tab
+  password: password
 
 development:
   <<: *default
-  database: dev_1_database
+  database: dev_api_database
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: test_1_database
+  database: test_api_database
 
 production:
  <<: *default
- database: dev_1_database
+ database: dev_api_database

@@ -5,7 +5,7 @@ module ApiFlashcards
     isolate_namespace ApiFlashcards
 
     config.generators do |g|
-      g.test_framework :rspec
+      g.test_framework :rspec, fixture: true
     end
   end
 end

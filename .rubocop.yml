@@ -4,6 +4,10 @@ AllCops:
   Exclude:
     - config/**/*
     - test/**/*
+    - spec/dummy/config/**/*
+    - spec/dummy/db/**/*
+    - spec/dummy/bin/**/*
+    - db/migrate/**/*
   TargetRubyVersion: 2.4.1
 
 Metrics/LineLength:
@@ -191,7 +195,7 @@ Style/DefWithParentheses:
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
-  Enabled: true
+  Enabled: false
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
@@ -553,7 +557,7 @@ Style/MultilineTernaryOperator:
 
 Style/MutableConstant:
   Description: 'Do not assign mutable objects to constants.'
-  Enabled: true
+  Enabled: false
 
 Style/NegatedIf:
   Description: >-
